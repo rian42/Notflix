@@ -1,0 +1,52 @@
+/* Component SCSS file */
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333333; /* Charcoal grey background color */
+  font-family: monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #333333; /* Charcoal background color */
+}
+
+.title {
+  color: #ffffcc; /* Pastel yellow color for the title */
+}
+
+select {
+  // Styles for the select element itself
+  background-color: #ffffcc; /* Pastel yellow background color */
+  color: #333333; /* Charcoal text color */
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+select option[disabled]:first-child {
+  color: #999999; /* Light gray text color for disabled option */
+}
+
+select option[selected] {
+  background-color: #ffffcc; /* Pastel yellow background color for selected option */
+  font-weight: bold;
+}
+
+h2 {
+  color: #ffffcc; /* Pastel yellow color for the "Login Page" heading */
+}
+
+button {
+  background-color: #ffffcc; /* Pastel yellow background color for the button */
+  color: #333333; /* Charcoal text color for the button */
+  margin-top: 15px;
+}

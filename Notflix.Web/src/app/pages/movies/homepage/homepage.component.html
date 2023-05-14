@@ -1,0 +1,30 @@
+<div class="table-container">
+  <div class="table-wrapper">
+    <h2 class="table-heading">Movie List</h2>
+    <div class>
+      <input type="text" placeholder="Search..." [(ngModel)]="searchTerm" (ngModelChange)="onSearchChange($event)" />
+      <button class="btn btn-primary add-button" (click)="openMovieDialog()">Add Movie</button>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Category</th>
+          <th>Rating</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let movie of movies">
+          <td> {{ movie.Title }} </td>
+          <td> {{ movie.Category }} </td>
+          <td> {{ movie.Rating }} </td>
+          <td>
+            <button class="btn btn-primary" (click)="openMovieDialog(movie)">Edit</button>
+            <button class="btn btn-danger" (click)="onDeleteClicked(movie)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

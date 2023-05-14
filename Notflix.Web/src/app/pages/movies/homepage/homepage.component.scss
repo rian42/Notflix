@@ -1,0 +1,50 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* Subtract the height of the navbar */
+    background-color: #333333; /* Charcoal background color */
+  }
+  
+  .table-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #aaaaaa; /* Shaded border color */
+    border-radius: 10px; /* Border radius for rounded corners */
+    padding: 10px; /* Padding inside the table wrapper */
+    background-color: #cccccc; /* Background color for shading */
+    max-height: 70vh; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enable vertical scroll if needed */
+  }
+  
+  .table-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    text-align: center;
+    background-color: #cccccc;
+  }
+  
+  .btn-primary,
+  .btn-danger {
+    background-color: #555554; /* Light grey color */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .btn-primary:hover,
+  .btn-danger:hover {
+    background-color: #cccccc; /* Slightly darker grey color on hover */
+  }
+  
+  .add-button {
+    float: right;
+    margin-bottom: 10px;
+  }
+  

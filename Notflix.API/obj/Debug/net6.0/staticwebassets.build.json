@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "iW7y+wRAJf8pfC0tpRqzNT4elK5kXIFHYIj7+qe1T2E=",
+  "Source": "Notflix.API",
+  "BasePath": "_content/Notflix.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
