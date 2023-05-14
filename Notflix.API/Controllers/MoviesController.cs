@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Notflix.API.Enumerables;
 using Notflix.API.Models;
 using Notflix.API.Repositories.Interfaces;
 
@@ -61,15 +62,14 @@ namespace Notflix.API.Controllers
         }
 
         [HttpPost("getmoviesbycategory")]
-        public IActionResult GetMoviesByCategory([FromQuery] int category, string title)
+        public IActionResult GetMoviesByCategory([FromQuery] int category)
         {
             try
             {
-                //    //var movie = new Movie(title, Category, id);
-                //    var entity = _repository.GetByIdOrDescription(movie);
+                var entity = _repository.GetByCategory(category);
 
-                //    if (movie is null)
-                //        return NotFound();
+                if (entity is null)
+                    return NotFound();
 
                 return Ok();
             }

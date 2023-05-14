@@ -38,7 +38,7 @@ namespace Notflix.API.Repositories
             return entity;
         }
 
-        public IEnumerable<Movie> GetByCategory(string category)
+        public IEnumerable<Movie> GetByCategory(int category)
         {
             var entities = _connection.QuerySingleOrDefault<IEnumerable<Movie>>("SELECT * FROM Movies WHERE Category = @category", new { category });
 

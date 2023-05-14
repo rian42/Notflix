@@ -11,7 +11,7 @@ namespace Notflix.API.Repositories.Interfaces
 
         Movie GetByTitle(string title);
 
-        IEnumerable<Movie> GetByCategory(string category);
+        IEnumerable<Movie> GetByCategory(int category);
 
         IEnumerable GetAll();
 
